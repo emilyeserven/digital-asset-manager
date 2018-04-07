@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Popup from 'reactjs-popup';
 import './App.css';
 import './bootstrap.css';
 
@@ -48,7 +49,25 @@ class App extends Component {
               <li className="list-inline-item px-2"><a onClick={this.setHubView}>Hub</a></li>
               <li className="list-inline-item px-2"><a onClick={this.setTreeView}>Tree</a></li>
               <li className="list-inline-item px-2"><a onClick={this.setAssetView}>Asset</a></li>
-              <li className="list-inline-item px-2">Upload</li>
+              <li className="list-inline-item px-2">
+                <Popup trigger={<a>Upload</a>} modal closeOnDocumentClick>
+                  {close => (
+                    <div className="py-3 px-5">
+                      <div className="text-center">
+                        <h4>Drop files to instantly upload them!</h4>
+                      </div>
+                      <div className="uploadholder mt-4">
+                        <div className="uploadbox">
+                          <Material.MdFileUpload size="75" color="#cfcece"/>
+                        </div>
+                      </div>
+                      <div className="d-flex justify-content-end mt-5">
+                        <a class="btn btn-outline-light" onClick={close}>Close</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-outline-secondary" onClick={close}>Finish</a>
+                      </div>
+                    </div>
+                  )}
+                </Popup></li>
             </ul>
           </div>
           <div className="float-right">
