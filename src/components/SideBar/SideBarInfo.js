@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 import appData from '../../data.json';
-
-const QDATA = appData.assets[0];
+const QDATA = appData.assets;
 
 class SideBarInfo extends Component {
   render() {
@@ -10,41 +9,57 @@ class SideBarInfo extends Component {
     console.log(appData);
     console.log("QDATA");
     console.log(QDATA);
+    const QDATAi = QDATA[this.props.match.params.id];
     return (
         <div className="col-3 pl-4 pr-0">
             <div className="sidebar d-flex flex-column justify-content-center">
-            <details>
+            <details open>
               <summary>Information</summary>
               <ul>
-                <li><b>Status:</b> {QDATA.assetStatus} </li>
-                <li><b>File Format:</b> {QDATA.infoGeneral.format} </li>
-                <li><b>Image Dimensions:</b> {QDATA.infoType.dimensions} </li>
-                <li><b>Resolution:</b> {QDATA.infoType.resolution} </li>
-                <li><b>Asset Data Size:</b> {QDATA.infoGeneral.fileSize} </li>
-                <li><b>Source:</b> {QDATA.infoGeneral.source} </li>
-                <li><b>Notes:</b> {QDATA.infoGeneral.notes} </li>
+                <li><b>Name:</b> {QDATAi.assetName} </li>
+                <li><b>Description:</b> {QDATAi.description} </li>
+                <li><b>Status:</b> {QDATAi.status} </li>
+                <li><b>File Format:</b> {QDATAi.infoGeneral.format} </li>
+                <li><b>Image Dimensions:</b> {QDATAi.infoType.dimensions} </li>
+                <li><b>Resolution:</b> {QDATAi.infoType.resolution} </li>
+                <li><b>Asset Data Size:</b> {QDATAi.infoGeneral.fileSize} </li>
+                <li><b>Source:</b> <a href={QDATAi.infoGeneral.source} target="blank">Link Here</a></li>
+                <li><b>Notes:</b> {QDATAi.infoGeneral.notes} </li>
               </ul>
             </details>
             <details>
               <summary>Relationships</summary>
               <ul>
-                <li><b>Tags:</b> ?? </li>
-                <li><b>Collections:</b> ?? </li>
+                <li><b>Tags: </b>
+                {QDATAi.relationships.tags.map((tag, i) => <React.Fragment key={i}>
+                  {!!i && ", "}
+                  {tag}
+                  </React.Fragment>)
+                }</li>
+                <li><b>Collections: </b>
+                {QDATAi.relationships.collections.map((col, i) => <React.Fragment key={i}>
+                  {!!i && ", "}
+                  {col}
+                  </React.Fragment>)
+                }</li>
               </ul>
             </details>
             <details>
               <summary>License</summary>
               <ul>
-                <li><b>Commercial Use:</b> ??</li>
-                <li><b>Personal Use:</b> ??</li>
-                <li><b>Attribution Needed:</b> ??</li>
-                <li><b>Licenses Used:</b> {QDATA.license.numberUsed} of {QDATA.license.numberAvail}</li>
+                <li><b>Commercial Use:</b> {QDATAi.license.commercialUse ? "Yes" : "No"}</li>
+                <li><b>Personal Use:</b> {QDATAi.license.personalUse ? "Yes" : "No"}</li>
+                <li><b>Attribution Needed:</b> {QDATAi.license.attributionNeeded ? "Yes" : "No"}</li>
+                <li><b>Licenses Used:</b> {QDATAi.license.numberUsed} of {QDATAi.license.numberAvail}</li>
               </ul>
             </details>
             <details>
               <summary>History</summary>
               <ul>
-                <li>Events here</li>
+                {QDATAi.history.events.map((event, i) => <li key={i}>
+                  {event}
+                  </li>)
+                }
               </ul>
             </details>
           </div>

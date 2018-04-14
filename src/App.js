@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+import {Switch, Route, Link} from 'react-router-dom';
 import './App.css';
 import './bootstrap.css';
 
 import * as Material from 'react-icons/lib/md';
 
-import appData from './data.json';
+// import appData from './data.json';
 
 import SideBarInfo from './components/SideBar/SideBarInfo.js';
 import SideBarLinks from './components/SideBar/SideBarLinks.js';
@@ -44,12 +45,11 @@ class App extends Component {
       <div className="App">
         <header>
         <nav className="navbar fixed-top navbar-expand-md navbar-light justify-content-between bg-light">
-          <a className="navbar-brand" href="#">SpaceMaker</a>
+          <Link to={"/"} className="navbar-brand">SpaceMaker</Link>
           <div className="temp-nav">
             <ul className="list-inline">
-              <li className="list-inline-item px-2"><a onClick={this.setHubView}>Hub</a></li>
-              <li className="list-inline-item px-2"><a onClick={this.setTreeView}>Tree</a></li>
-              <li className="list-inline-item px-2"><a onClick={this.setAssetView}>Asset</a></li>
+              <li className="list-inline-item px-2"><Link to="/">Hub</Link></li>
+              <li className="list-inline-item px-2"><Link to="/tree">Tree</Link></li>
               <li className="list-inline-item px-2">
                 <Popup trigger={<a>Upload</a>} modal closeOnDocumentClick>
                   {close => (
@@ -83,15 +83,25 @@ class App extends Component {
         </header>
         <div className="container-fluid px-0">
           <div className="row mt-5">
-            <SideBar view={this.state.view} />
-            <MainComponent view={this.state.view} />
+            <Switch>
+              <Route exact path='/' component={SideBarHub} />
+              <Route exact path='/tree' component={SideBarLinks} />
+              <Route exact path='/asset/:id' component={SideBarInfo} />
+            </Switch>
+            {/*<SideBar view={this.state.view} />*/}
+            {/*<MainComponent view={this.state.view} />*/}
+            <Switch>
+              <Route exact path='/' component={HubView} />
+              <Route exact path='/tree' component={TreeView} />
+              <Route exact path='/asset/:id' component={AssetView} />
+            </Switch>
           </div>
         </div>
       </div>
     );
   }
 }
-
+/*
 function SideBar(props) {
   if (props.view == "asset") {
     return <SideBarInfo />;
@@ -101,7 +111,8 @@ function SideBar(props) {
     return <SideBarHub />;
   }
 }
-
+*/
+/*
 function MainComponent(props) {
   if (props.view == "asset") {
     return <AssetView />;
@@ -111,5 +122,5 @@ function MainComponent(props) {
     return <HubView />;
   }
 }
-
+*/
 export default App;

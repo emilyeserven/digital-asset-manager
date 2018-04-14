@@ -19,7 +19,8 @@ class TreeView extends Component {
                             {console.log(index)}
                             <Card
                                 assetName={QDATA[index].assetName}
-                                description={QDATA[index].description}>
+                                description={QDATA[index].description}
+                                assetid={index}>
                             </Card>
                         </div>
                     ))

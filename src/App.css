@@ -52,3 +52,22 @@ ul li {
   float:0 auto;
   border-radius: 5px;
 }
+
+.asset-tools .list-inline-item a {
+  background-color: #fff;
+  color:#333;
+  border-radius: 0;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.asset-tools .list-inline-item a:hover {
+  background-color: #eee;
+}
+.asset-tools .list-inline-item a:focus,
+.asset-tools .list-inline-item a:active {
+  background-color: #ddd;
+}

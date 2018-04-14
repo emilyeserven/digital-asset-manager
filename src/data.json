@@ -7,7 +7,7 @@
             "type": "image",
             "status": "Downloaded",
             "previewSm": "Asset preview, small",
-            "previewLg": "Asset preview, large",
+            "previewLg": "http://via.placeholder.com/500x400",
             "infoGeneral": {
                 "format": "jpeg",
                 "fileSize": "100MB",
@@ -19,8 +19,8 @@
                 "resolution": "72ppi"
             },
             "relationships": {
-                "tags": [],
-                "collections": []
+                "tags": ["tag 1", "tag 2"],
+                "collections": ["Collection"]
             },
             "license": {
                 "commercialUse": false,

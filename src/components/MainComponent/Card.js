@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
+import {Link} from 'react-router-dom';
+
 class Card extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         console.log("Card");
         console.log(this.props);
@@ -13,7 +12,7 @@ class Card extends Component {
               <div className="card-body">
                 <h5 className="card-title">{this.props.assetName}</h5>
                 <p className="card-text">{this.props.description}</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link to={`/asset/${this.props.assetid}`} className="btn btn-primary">Go somewhere</Link>
               </div>
             </div>
         )
