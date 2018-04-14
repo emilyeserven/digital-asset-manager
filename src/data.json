@@ -1,0 +1,133 @@
+{
+    "assets": [
+        {
+            "assetName": "sample 1",
+            "id": "samp1",
+            "description": "Lorem ipsum dolor sit amet",
+            "type": "image",
+            "status": "Downloaded",
+            "previewSm": "Asset preview, small",
+            "previewLg": "Asset preview, large",
+            "infoGeneral": {
+                "format": "jpeg",
+                "fileSize": "100MB",
+                "source": "http://#",
+                "notes": "Wow"
+            },
+            "infoType": {
+                "dimensions": "100x100px",
+                "resolution": "72ppi"
+            },
+            "relationships": {
+                "tags": [],
+                "collections": []
+            },
+            "license": {
+                "commercialUse": false,
+                "personalUse": true,
+                "attributionNeeded": false,
+                "numberAvail": 3,
+                "numberUsed": 1
+            },
+            "history": {
+                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+            }
+        }, {
+            "assetName": "sample 2",
+            "id": "samp2",
+            "description": "Lorem ipsum dolor sit amet",
+            "type": "image",
+            "status": "Downloaded",
+            "previewSm": "Asset preview, small",
+            "previewLg": "Asset preview, large",
+            "infoGeneral": {
+                "format": "jpeg",
+                "fileSize": "100MB",
+                "source": "http://#",
+                "notes": "Wow"
+            },
+            "infoType": {
+                "dimensions": "100x100px",
+                "resolution": "72ppi"
+            },
+            "relationships": {
+                "tags": [],
+                "collections": []
+            },
+            "license": {
+                "commercialUse": false,
+                "personalUse": true,
+                "attributionNeeded": false,
+                "numberAvail": 3,
+                "numberUsed": 1
+            },
+            "history": {
+                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+            }
+        }, {
+            "assetName": "sample 3",
+            "id": "samp3",
+            "description": "Lorem ipsum dolor sit amet",
+            "type": "image",
+            "status": "Downloaded",
+            "previewSm": "Asset preview, small",
+            "previewLg": "Asset preview, large",
+            "infoGeneral": {
+                "format": "jpeg",
+                "fileSize": "100MB",
+                "source": "http://#",
+                "notes": "Wow"
+            },
+            "infoType": {
+                "dimensions": "100x100px",
+                "resolution": "72ppi"
+            },
+            "relationships": {
+                "tags": [],
+                "collections": []
+            },
+            "license": {
+                "commercialUse": false,
+                "personalUse": true,
+                "attributionNeeded": false,
+                "numberAvail": 3,
+                "numberUsed": 1
+            },
+            "history": {
+                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+            }
+        }, {
+            "assetName": "sample 4",
+            "id": "samp4",
+            "description": "Lorem ipsum dolor sit amet",
+            "type": "image",
+            "status": "Downloaded",
+            "previewSm": "Asset preview, small",
+            "previewLg": "Asset preview, large",
+            "infoGeneral": {
+                "format": "jpeg",
+                "fileSize": "100MB",
+                "source": "http://#",
+                "notes": "Wow"
+            },
+            "infoType": {
+                "dimensions": "100x100px",
+                "resolution": "72ppi"
+            },
+            "relationships": {
+                "tags": [],
+                "collections": []
+            },
+            "license": {
+                "commercialUse": false,
+                "personalUse": true,
+                "attributionNeeded": false,
+                "numberAvail": 3,
+                "numberUsed": 1
+            },
+            "history": {
+                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+            }
+        }
+    ]
+}

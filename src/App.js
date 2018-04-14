@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Popup from 'reactjs-popup';
 import './App.css';
 import './bootstrap.css';
 
 import * as Material from 'react-icons/lib/md';
+
+import appData from './data.json';
 
 import SideBarInfo from './components/SideBar/SideBarInfo.js';
 import SideBarLinks from './components/SideBar/SideBarLinks.js';
