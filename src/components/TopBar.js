@@ -19,7 +19,7 @@ class TopBar extends Component {
               </ul>
               <span>This view: {this.state.view}</span>
             </div>
-            <div className="float-right">
+            <div className="float-right icon-nav">
                 <ul className="list-inline">
                     <li className="list-inline-item px-2"><Material.MdSearch /></li>
                     <li className="list-inline-item px-2"><Material.MdHome /></li>

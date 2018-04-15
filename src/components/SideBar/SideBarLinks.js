@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class SideBarLinks extends Component {
   render() {
     return (
-        <div className="col-3 pl-4 pr-0">
-          <div className="sidebar d-flex flex-column justify-content-center">
+        <div className="col-3">
+          <div className="sidebar d-flex flex-column justify-content-center pl-4 pr-0">
             <ul>
                 <li>Images</li>
                 <li>Word</li>

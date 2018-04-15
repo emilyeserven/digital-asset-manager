@@ -53,7 +53,7 @@ class App extends Component {
               <li className="list-inline-item px-2">
                 <Popup trigger={<a>Upload</a>} modal closeOnDocumentClick>
                   {close => (
-                    <div className="py-3 px-5">
+                    <div className="py-3 px-5 modalbox">
                       <div className="text-center">
                         <h4>Drop files to instantly upload them!</h4>
                       </div>
@@ -71,12 +71,12 @@ class App extends Component {
                 </Popup></li>
             </ul>
           </div>
-          <div className="float-right">
+          <div className="float-right icon-nav">
               <ul className="list-inline">
-                  <li className="list-inline-item px-2"><Material.MdSearch /></li>
-                  <li className="list-inline-item px-2"><Material.MdHome /></li>
-                  <li className="list-inline-item px-2"><Material.MdFileUpload /></li>
-                  <li className="list-inline-item px-2"><Material.MdAccountBox /></li>
+                  <li className="list-inline-item px-2"><a href="#"><Material.MdSearch /></a></li>
+                  <li className="list-inline-item px-2"><a href="#"><Material.MdHome /></a></li>
+                  <li className="list-inline-item px-2"><a href="#"><Material.MdFileUpload /></a></li>
+                  <li className="list-inline-item px-2"><a href="#"><Material.MdAccountBox /></a></li>
               </ul>
           </div>
         </nav>

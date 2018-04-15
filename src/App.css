@@ -1,6 +1,48 @@
+body {
+  overflow:hidden;
+}
 .sidebar {
-    height: 100%;
-    background-color: #eee;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #00b0a3;
+  color:#fff;
+}
+.main-pane {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.sidebar a {
+  color: #fff;
+}
+.navbar.bg-light.fixed-top {
+  background-color: #009687 !important;
+  color: #fff;
+}
+.navbar a, .navbar-light a.navbar-brand {
+  color: #fff;
+}
+
+.temp-nav .list-inline-item {
+  margin-bottom: 0;
+}
+.temp-nav ul, .icon-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+details ul {
+  padding-left: 1em;
+}
+.btn.btn-primary {
+  background-color: #00b0a3;
+  border-color: #00b0a3;
+  border-radius: 0;
+}
+.btn.btn-primary:hover {
+  background-color: #009687;
+  border-color: #009687;
 }
 ul li {
     list-style-type: none;
@@ -42,6 +84,9 @@ ul li {
   border-radius: 18px;
   border: 1px solid #cfcece;
 }
+.modalbox {
+  color: #333;
+}
 .uploadholder {
   display:block;
   text-align: center;
@@ -52,7 +97,6 @@ ul li {
   float:0 auto;
   border-radius: 5px;
 }
-
 .asset-tools .list-inline-item a {
   background-color: #fff;
   color:#333;
@@ -67,7 +111,22 @@ ul li {
 .asset-tools .list-inline-item a:hover {
   background-color: #eee;
 }
-.asset-tools .list-inline-item a:focus,
 .asset-tools .list-inline-item a:active {
   background-color: #ddd;
+}
+.icon-nav li {
+  margin-bottom: 0;
+}
+.icon-nav li a {
+  border-radius: 0;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.icon-nav li a:hover {
+  background-color: #1BAFA3;
+  color: #fff;
 }

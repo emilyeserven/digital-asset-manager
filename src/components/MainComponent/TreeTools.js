@@ -8,9 +8,22 @@ class TreeTools extends Component {
             <div>
                 <InnerNav />
                 <div className="d-flex justify-content-between pb-4">
-                    <div>
-                        <span>Filter <Material.MdArrowDropDown /></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span>Sort by <Material.MdArrowDropDown /></span>
+                    <div class="form-inline">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option disabled selected>Filter</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="form-control" id="exampleFormControlSelect2">
+                            <option disabled selected>Sort by</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
                     <div>
                         <a className="btn btn-outline-secondary">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;

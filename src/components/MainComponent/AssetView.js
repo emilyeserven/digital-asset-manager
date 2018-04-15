@@ -9,7 +9,7 @@ class AssetView extends Component {
         console.log("AssetView");
         const QDATAi = QDATA[this.props.match.params.id];
         return (
-            <div className="col-9 px-4 pt-5 ml-0">
+            <div className="col-9 pt-5 mx-0 main-pane">
                 <AssetTools data={QDATAi}/>
                 <div className="container text-center my-5 pb-5">
                     <img src={QDATAi.previewLg} />
