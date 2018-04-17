@@ -6,7 +6,7 @@ class HubView extends Component {
         return (
             <div className="container mt-5">
                 <div className="row">
-                    <input class="form-control form-control-lg" type="text" placeholder="Search" />
+                    <input className="form-control form-control-lg" type="text" placeholder="Search" />
                 </div>
                 <div className="row d-flex justify-content-center">
                     <ul className="list-inline hub-tools mt-3">

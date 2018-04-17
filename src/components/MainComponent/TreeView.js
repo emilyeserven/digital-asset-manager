@@ -10,7 +10,7 @@ class TreeView extends Component {
         console.log("TreeView");
         console.log(QDATA);
         return (
-            <div className="col-9 px-4 pt-5 ml-0 main-pane">
+            <div className="col-9 px-4 py-5 mb-5 ml-0 main-pane">
                 <TreeTools />
                 <div className="row">
                 {

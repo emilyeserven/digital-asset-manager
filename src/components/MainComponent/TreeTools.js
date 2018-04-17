@@ -8,17 +8,15 @@ class TreeTools extends Component {
             <div>
                 <InnerNav />
                 <div className="d-flex justify-content-between pb-4">
-                    <div class="form-inline">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option disabled selected>Filter</option>
+                    <div className="form-inline">
+                        <select defaultValue="Filter" className="form-control" id="exampleFormControlSelect1">
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
                         </select>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <select class="form-control" id="exampleFormControlSelect2">
-                            <option disabled selected>Sort by</option>
+                        <select defaultValue="Sort by" className="form-control" id="exampleFormControlSelect2">
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>

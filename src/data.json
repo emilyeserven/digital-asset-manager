@@ -1,29 +1,28 @@
 {
     "assets": [
         {
-            "assetName": "sample 1",
-            "id": "samp1",
-            "description": "Lorem ipsum dolor sit amet",
-            "type": "image",
+            "assetName": "Italy Crowd",
+            "description": "Crowd Walking in Italy",
+            "type": "video",
             "status": "Downloaded",
-            "previewSm": "Asset preview, small",
-            "previewLg": "http://via.placeholder.com/500x400",
+            "previewSm": "image_for_listings.jpg",
+            "previewLg": "http://via.placeholder.com/500x500",
             "infoGeneral": {
-                "format": "jpeg",
-                "fileSize": "100MB",
-                "source": "http://#",
-                "notes": "Wow"
+                "format": "mp4",
+                "fileSize": "7.8MB",
+                "source": "https://pixabay.com/en/videos/crowd-people-city-torino-italy-6582/",
+                "notes": "0:19 seconds long"
             },
             "infoType": {
-                "dimensions": "100x100px",
-                "resolution": "72ppi"
+                "dimensions": "1920x1080px",
+                "resolution": "1080p"
             },
             "relationships": {
-                "tags": ["tag 1", "tag 2"],
-                "collections": ["Collection"]
+                "tags": ["crowd", "walking"],
+                "collections": ["people", "video"]
             },
             "license": {
-                "commercialUse": false,
+                "commercialUse": true,
                 "personalUse": true,
                 "attributionNeeded": false,
                 "numberAvail": 3,
@@ -33,100 +32,97 @@
                 "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
             }
         }, {
-            "assetName": "sample 2",
-            "id": "samp2",
-            "description": "Lorem ipsum dolor sit amet",
+            "assetName": "Sunrise",
+            "description": "Colorful Sunrise with Morning Fog",
             "type": "image",
             "status": "Downloaded",
-            "previewSm": "Asset preview, small",
-            "previewLg": "Asset preview, large",
+            "previewSm": "image_for_listings.jpg",
+            "previewLg": "http://via.placeholder.com/500x500",
             "infoGeneral": {
-                "format": "jpeg",
-                "fileSize": "100MB",
-                "source": "http://#",
-                "notes": "Wow"
+                "format": "jpg",
+                "fileSize": "13.3MB",
+                "source": "https://www.storyblocks.com/stock-image/colorful-sunrise-at-the-field-with-morning-fog-rx3e-app7d-j6gt9k4r",
+                "notes": "Used in previous client work"
             },
             "infoType": {
-                "dimensions": "100x100px",
-                "resolution": "72ppi"
+                "dimensions": "5847x3898px",
+                "resolution": "300ppi"
             },
             "relationships": {
-                "tags": [],
-                "collections": []
+                "tags": ["fog", "landscape"],
+                "collections": ["nature", "backgrounds"]
             },
             "license": {
                 "commercialUse": false,
                 "personalUse": true,
                 "attributionNeeded": false,
-                "numberAvail": 3,
+                "numberAvail": 8,
                 "numberUsed": 1
             },
             "history": {
-                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+                "events": ["Uploaded 10 days ago.", "Edited 2 day ago."]
             }
         }, {
-            "assetName": "sample 3",
-            "id": "samp3",
-            "description": "Lorem ipsum dolor sit amet",
-            "type": "image",
-            "status": "Downloaded",
-            "previewSm": "Asset preview, small",
-            "previewLg": "Asset preview, large",
+            "assetName": "VincentAugustus_You",
+            "description": "You by Vincent Augustus",
+            "type": "audio",
+            "status": "Website",
+            "previewSm": "image_for_listings.jpg",
+            "previewLg": "http://via.placeholder.com/500x500",
             "infoGeneral": {
-                "format": "jpeg",
-                "fileSize": "100MB",
-                "source": "http://#",
-                "notes": "Wow"
+                "format": "mp3",
+                "fileSize": "5.7MB",
+                "source": "http://freemusicarchive.org/music/Vincent_Augustus/Nightlife_for_Morning_People/12_You",
+                "notes": "New artist I found that I like"
             },
             "infoType": {
-                "dimensions": "100x100px",
-                "resolution": "72ppi"
+                "dimensions": "",
+                "resolution": ""
             },
             "relationships": {
-                "tags": [],
-                "collections": []
+                "tags": ["Soul-RnB", "Hip-Hop"],
+                "collections": ["music", "audio"]
             },
             "license": {
                 "commercialUse": false,
                 "personalUse": true,
-                "attributionNeeded": false,
-                "numberAvail": 3,
-                "numberUsed": 1
+                "attributionNeeded": true,
+                "numberAvail": 2,
+                "numberUsed": 0
             },
             "history": {
-                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+                "events": ["Uploaded 5 days ago.", "Edited 3 day ago."]
             }
         }, {
-            "assetName": "sample 4",
-            "id": "samp4",
-            "description": "Lorem ipsum dolor sit amet",
-            "type": "image",
+            "assetName": "Night_Typography",
+            "description": "Cosmic Illustrative Font",
+            "type": "graphic",
             "status": "Downloaded",
-            "previewSm": "Asset preview, small",
-            "previewLg": "Asset preview, large",
+            "previewSm": "image_for_listings.jpg",
+            "previewLg": "http://via.placeholder.com/500x500",
             "infoGeneral": {
-                "format": "jpeg",
-                "fileSize": "100MB",
-                "source": "http://#",
-                "notes": "Wow"
+                "format": "ai",
+                "fileSize": "144.64MB",
+                "source": "https://creativemarket.com/oniks_astarit/2285793-Night.-Creative-typography",
+                "notes": "Includes 36 vector symbols, 4 backgrounds, 9 space shapes"
             },
             "infoType": {
-                "dimensions": "100x100px",
-                "resolution": "72ppi"
+                "dimensions": "",
+                "resolution": "300ppi"
             },
             "relationships": {
-                "tags": [],
-                "collections": []
+                "tags": ["vector", "space"],
+                "collections": ["fonts", "illustrations"]
             },
             "license": {
-                "commercialUse": false,
+                "commercialUse": true,
                 "personalUse": true,
                 "attributionNeeded": false,
-                "numberAvail": 3,
-                "numberUsed": 1
+                "numberAvail": 4,
+                "numberUsed": 2
             },
             "history": {
-                "events": ["Uploaded 2 days ago.", "Edited 1 day ago."]
+                "events": ["Uploaded 12 days ago.", "Edited 4 day ago."]
             }
         }
     ]
