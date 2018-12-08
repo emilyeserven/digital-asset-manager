@@ -2,7 +2,7 @@
   "name": "digital-asset-manager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rawgit.com/emilyeserven/digital-asset-manager/master/build",
+  "homepage": "https://cdn.jsdelivr.net/gh/emilyeserven/digital-asset-manager/build",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
